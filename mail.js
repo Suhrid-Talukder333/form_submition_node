@@ -6,14 +6,14 @@ const dotenv = require('dotenv').config();
 //     service: "gmail",
 //     auth: {
 //         user: "surja333@gmail.com",
-//         pass: "vreiwrpmpuvlgudx",
+//         pass: process.env.GMAIL_KEY,
 //     }
 // })
 
 const auth = {
     auth: {
         api_key: process.env.API_KEY,
-        domain: 'sandbox2c4746632b6f4919bea83e164b64a8e5.mailgun.org',
+        domain: process.env.DOMAIN_KEY,
     }
 }
 
